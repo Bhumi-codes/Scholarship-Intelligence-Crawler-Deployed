@@ -3,6 +3,8 @@
 Record browsing is read-only. The daily scheduler and Crawl now button run the
 shared live discovery, extraction and verification workflow.
 """
+import sys
+from pathlib import Path
 PROJECT_DIRECTORY = Path(__file__).resolve().parent.parent
 if str(PROJECT_DIRECTORY) not in sys.path:
     sys.path.insert(0, str(PROJECT_DIRECTORY))
